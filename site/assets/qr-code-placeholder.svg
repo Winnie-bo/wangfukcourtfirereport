@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" role="img" aria-labelledby="title desc">
+  <title id="title">QR code placeholder</title>
+  <desc id="desc">Replace this image with the final QR code for the live report URL.</desc>
+  <rect width="160" height="160" fill="#fff"/>
+  <g fill="#111">
+    <path d="M8 8h48v48H8zM16 16v32h32V16zM24 24h16v16H24zM104 8h48v48h-48zM112 16v32h32V16zM120 24h16v16h-16zM8 104h48v48H8zM16 112v32h32v-32zM24 120h16v16H24z"/>
+    <path d="M72 8h8v8h-8zM88 8h8v16h-8zM64 24h16v8H64zM80 32h16v8H80zM64 48h8v16h-8zM80 48h8v8h-8zM96 48h8v16h-8zM112 72h8v16h-8zM128 64h8v16h-8zM144 72h8v24h-8zM64 72h16v8H64zM88 72h8v16h-8zM64 88h8v8h-8zM80 88h24v8H80zM104 96h8v16h-8zM120 96h16v8h-16zM144 104h8v16h-8zM64 104h8v16h-8zM80 112h16v8H80zM96 120h8v16h-8zM112 120h8v8h-8zM128 128h24v8h-24zM64 136h16v16H64zM88 144h8v8h-8z"/>
+  </g>
+  <rect x="10" y="68" width="140" height="24" fill="#fff"/>
+  <text x="80" y="84" fill="#7b1e24" font-family="Arial, sans-serif" font-size="10" font-weight="700" text-anchor="middle">REPLACE QR IMAGE</text>
+</svg>
