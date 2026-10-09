@@ -15,7 +15,7 @@ emits an interrelated set of HTML pages into site_out/:
 
 Usage: python3 codes/build_site.py
 """
-import json, os, re, html as htmlmod, datetime, glob
+import json, os, re, html as htmlmod, datetime, glob import json, os, re, html as htmlmod, datetime, glob, shutil
 from urllib.parse import quote as urlquote
 from collections import Counter
 
@@ -2509,3 +2509,19 @@ def main():
 
 if __name__ == "__main__":
     main()
+    # === 新增：将 site 目录下的静态页面和资源复制到 site_out ===
+SITE = os.path.join(ROOT, "site")
+os.makedirs(OUT, exist_ok=True)
+
+# 复制引导页
+shutil.copy2(os.path.join(SITE, "index.html"), os.path.join(OUT, "index.html"))
+# 复制互动报告页
+shutil.copy2(os.path.join(SITE, "interactive_report.html"), os.path.join(OUT, "interactive_report.html"))
+
+# 复制 assets 静态资源文件夹
+assets_src = os.path.join(SITE, "assets")
+assets_dst = os.path.join(OUT, "assets")
+if os.path.exists(assets_dst):
+    shutil.rmtree(assets_dst)
+shutil.copytree(assets_src, assets_dst)
+
